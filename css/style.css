@@ -19,7 +19,7 @@ aside {
     background-color: #29434e;
     color: #b3e5fc;
 }
-.flex img {
+aside img {
     height: 40px;
     margin: 10px 5px;
 }
@@ -32,6 +32,7 @@ aside {
 .flex i {
     font-size: 18px;
     padding: 10px 10px;
+
 }
 .flex span {
     font-size: 12px;
@@ -55,14 +56,17 @@ aside {
 .icon i:hover {
     color: #b3e5fc;
     cursor: pointer;
+    border-left: 4px solid #f57f17;
 }
 .playlist i:hover {
     color: #b3e5fc;
     cursor: pointer;
+    border-left: 4px solid #f57f17;
 }
 .playlist li:hover {
     color: #b3e5fc;
     cursor: pointer;
+    border-left: 4px solid #f57f17;
 }
 .account {
     display: flex;
@@ -111,7 +115,57 @@ header {
 }
 main {
     display: flex;
+    flex-direction: column;
     background-color: #546e7a;
     width: calc(100vw - 150px);
+    padding: 25px;
     height: calc(100vh);
+    overflow-y: auto;
+    float: left;
+}
+.selection {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    height: 120px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.selection p {
+    color: #819ca9;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.selection p:hover {
+    border-bottom: 4px solid #f57f17;
+    color: #b3e5fc;
+}
+.last-play {
+    display: flex;
+    flex-wrap: wrap;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h4, p {
+    font-weight: bold;
+    color: #b3e5fc;
+}
+.row small {
+    color: #819ca9;
+    font-weight: bold;
+}
+.card {
+    flex: 0 0 200px;
+    margin: 5px;
+}
+.created {
+    display: flex;
+    flex-wrap: wrap;
 }
