@@ -2,27 +2,93 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
-body {
-    font-family: 'Ubuntu', sans-serif;
-}
+
 .flex {
     display: flex;
 }
 aside {
-    display: flex;
     width: 150px;
     height: 100vh;
     background-color: #29434e;
     color: #b3e5fc;
 }
+.flex img {
+    height: 40px;
+    margin: 10px 5px;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #546e7a;
+}
+.flex i {
+    font-size: 18px;
+    padding: 10px 10px;
+}
+.flex span {
+    font-size: 12px;
+    padding: 10px 10px;
+}
+.playlist {
+    padding: 10px 0;
+    color: #546e7a;
+}
+.playlist p, li {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.playlist p {
+    color: #b3e5fc;
+}
+.playlist i {
+    font-size: 30px;
+}
+.icon i:hover {
+    color: #b3e5fc;
+    cursor: pointer;
+}
+.playlist i:hover {
+    color: #b3e5fc;
+    cursor: pointer;
+}
+.playlist li:hover {
+    color: #b3e5fc;
+    cursor: pointer;
+}
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: #546e7a;
+    height: 300px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.account p {
+    padding: 10px 10px;
+}
+.account i {
+    color:  #b3e5fc;
+}
+.line {
+    height: 1px;
+    width: 90%;
+    background-color: #546e7a;
+    margin: 0 5px;
+}
+
 header {
-    height: 80px;
+    height: 60px;
     width: calc(100vw - 150px);
     opacity: 0.8;
     position: fixed;
@@ -37,10 +103,11 @@ header {
     color: #b3e5fc;
     margin: 0 20px;
     padding: 8px 30px;
+    cursor: pointer;
 }
 .w3-button:hover {
-    background-color: #819ca9 !important;
-    color: #e0f7fa !important;
+    background-color: #b3e5fc !important;
+    color: #29434e !important;
 }
 main {
     display: flex;
