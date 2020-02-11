@@ -90,7 +90,10 @@ aside img {
     background-color: #546e7a;
     margin: 0 5px;
 }
-
+.right {
+    display: flex;
+    flex-direction: column;
+}
 header {
     height: 60px;
     width: calc(100vw - 150px);
@@ -126,11 +129,13 @@ main {
 .selection {
     display: flex;
     justify-content: center;
-    padding-top: 70px;
+    margin-top: 70px;
     height: 120px;
     width: 100%;
     flex-wrap: wrap;
     align-items: flex-start;
+    flex: 0 0 50px;
+
 }
 
 .selection p {
@@ -164,6 +169,22 @@ main h4, p {
 .card {
     flex: 0 0 200px;
     margin: 5px;
+}
+.cover {
+    position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.cover:hover .overlay {
+    opacity: 1;
+}
+img:hover {
+    filter: brightness(50%);
 }
 .created {
     display: flex;
