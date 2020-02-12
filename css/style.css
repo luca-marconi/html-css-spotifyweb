@@ -15,9 +15,15 @@
 }
 aside {
     width: 150px;
-    height: 100vh;
+
     background-color: #29434e;
     color: #b3e5fc;
+}
+.aside-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
 }
 aside img {
     height: 40px;
@@ -74,7 +80,6 @@ aside img {
     align-items: flex-start;
     justify-content: flex-end;
     color: #546e7a;
-    margin-top: 140px;
     font-size: 14px;
     font-weight: bold;
 }
@@ -116,13 +121,14 @@ header {
     background-color: #b3e5fc !important;
     color: #29434e !important;
 }
+
 main {
     display: flex;
     flex-direction: column;
     background-color: #546e7a;
     width: calc(100vw - 150px);
     padding: 25px;
-    height: calc(100vh);
+    height: calc(100vh - 80px);
     overflow-y: auto;
     float: left;
 }
@@ -202,22 +208,25 @@ img:hover {
     z-index: 99999;
 }
 .start-nav-player {
-    width: 15%;
+    width: 230px;
     height: 70px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     padding: 10px 10px;
+    flex-shrink: 0;
 }
 .title-player {
-    padding: 0 15px;
+    padding: 0 5px;
 }
-.center-nav-player {
-    width: 50%;
-    height: 70px;
+.title-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .end-nav-player {
-    width: 15%;
+    width: 230px;
     height: 70px;
 }
 .title-player small {
@@ -228,9 +237,12 @@ img:hover {
     color: #819ca9;
 }
 .center-nav-player {
+    width: 50%;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-shrink: 1;
 }
 .command {
     display: flex;
@@ -243,6 +255,7 @@ img:hover {
     justify-content: center;
     align-items: center;
     color: white;
+    flex-shrink: 0;
 }
 
 .meter {
@@ -269,6 +282,8 @@ img:hover {
     justify-content: center;
     align-items: center;
     color: #819ca9;
+    flex-wrap: no-wrap;
+    flex: 0 0 auto;
 }
 i:hover {
     color: #b3e5fc;
