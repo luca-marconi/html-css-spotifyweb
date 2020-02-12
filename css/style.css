@@ -263,3 +263,14 @@ img:hover {
   position: relative;
   overflow: hidden;
 }
+.end-nav-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #819ca9;
+}
+i:hover {
+    color: #b3e5fc;
+    cursor: pointer;
+}
